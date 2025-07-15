@@ -63,7 +63,7 @@ export default function Haiku() {
             display: 'flex',
         }}> 
             <Box>
-                <Typography variant="body1" sx={{ fontStyle: 'italic', lineHeight: 1.8, fontSize: '1.1rem' }}>
+                <Typography variant="body1" component="div" sx={{ fontStyle: 'italic', lineHeight: 1.8, fontSize: '1.1rem' }}>
                     {data.haiku.lines.map((line: string, index: number) => (
                         <div key={index}>{line}</div>
                     ))}
