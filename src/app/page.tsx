@@ -40,12 +40,12 @@ export default function Home() {
             flexDirection: 'row',
             gap: '10px',
           }}>
-            <SignInButton forceRedirectUrl="/home">
+            <SignInButton forceRedirectUrl="/homepage">
               <Button variant="contained" color="primary" sx={{ marginTop: '20px' }}>
                 Get Started
               </Button>
             </SignInButton>
-            <SignUpButton forceRedirectUrl="/home">
+            <SignUpButton forceRedirectUrl="/homepage">
               <Button variant="contained" color="secondary" sx={{ marginTop: '20px' }}>
                 Sign In
               </Button>

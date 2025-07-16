@@ -19,15 +19,15 @@ A distraction-free productivity tool built with a modern full-stack tech stack. 
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- Modern authentication (Clerk) with protected routes
-- Custom theming and global font (Raleway)
-- Responsive, accessible, and animated UI (MUI + Tailwind)
-- Clean, scalable codebase using best practices
-- Solo project: all design, code, and architecture by me
-- Security and performance focused
-- Ready for CI/CD and cloud deployment
+- ⏱️ **Focus Sessions** – Start timers and log distraction-free work sessions with notes.
+- 🧠 **AI-Powered Summaries** – Get concise feedback and patterns from your focus logs (OpenAI).
+- 🔥 **Streak Tracking** – Stay motivated with visual streak indicators and progress stats.
+- 👥 **Pods (Accountability Groups)** – Join small focus groups to build habits together.
+- 📊 **Insights Dashboard** – View trends, session stats, and overall productivity patterns.
+- 🔐 **Secure Authentication** – Built using Supabase Auth.
+- 🧰 **Modern Tech Stack** – Built with Next.js, React, TypeScript, and Supabase.
 
 ---
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { useUser } from "@clerk/nextjs"
-import { Box, Button, Fade } from "@mui/material";
+        import { Box, Fade } from "@mui/material";
 import Haiku from "../components/haiku";
 import Dropdown from "../components/dropdown";
 import BeginWriting from "../components/beginwritting";
