@@ -61,7 +61,7 @@ export default function BeginWriting() {
                             label="Your Thoughts"
                         />
                         </Fade>
-                        <Fade in={showInput} timeout={5000}>
+                        <Fade in={showInput} timeout={2000}>
                         <Button 
                             variant="contained" 
                             color="primary"
@@ -74,7 +74,7 @@ export default function BeginWriting() {
                     {showCloseButton && (
                         <Box sx={{ 
                         }}>
-                            <Fade in={showCloseButton} timeout={5000}>
+                            <Fade in={showCloseButton} timeout={2000}>
                             <IconButton 
                                 aria-label="close" 
                                 onClick={handleClose}
