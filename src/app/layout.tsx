@@ -3,6 +3,8 @@
 import { ReactNode } from 'react';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 import { ClerkProvider } from '@clerk/nextjs';
+import { ApolloProvider } from '@apollo/client';
+import { client } from '../lib/apollo-client';
 
 const theme = createTheme({
   palette: {
@@ -44,7 +46,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <ClerkProvider>
-            {children}
+            <ApolloProvider client={client}>
+              {children}
+            </ApolloProvider>
           </ClerkProvider>
         </ThemeProvider>
       </body>
