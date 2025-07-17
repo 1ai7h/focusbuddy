@@ -39,7 +39,7 @@ A distraction-free productivity tool built with a modern full-stack tech stack. 
 
 1. **Clone the repo:**
    ```bash
-   [git clone https://github.com/your-username/focusbuddy.git](https://github.com/1ai7h/focusbuddy)
+   git clone https://github.com/1ai7h/focusbuddy
    cd focusbuddy
    ```
 2. **Install dependencies:**
