@@ -4,7 +4,8 @@ A distraction-free productivity tool built with a modern full-stack tech stack. 
 
 ---
 
-<img width="2521" height="1163" alt="image" src="https://github.com/user-attachments/assets/173bd4c1-dfcc-475d-a207-84871d1ec7c7" />
+<img width="2340" height="750" alt="image" src="https://github.com/user-attachments/assets/ef798377-9d36-4444-b902-cb887f4109a5" />
+
 
 
 ## 🚀 Tech Stack
