@@ -13,7 +13,7 @@ const typeDefs = /* GraphQL */ `
   type Post {
     id: Int!
     date: String!
-    userId: Int!
+    userId: String!
     userName: String!
     content: String!
   }
@@ -25,7 +25,7 @@ const typeDefs = /* GraphQL */ `
   }
 
   type Mutation {
-    createPost(userId: Int!, userName: String!, content: String!): Post!
+    createPost(userId: String!, userName: String!, content: String!): Post!
   }
 `;
 

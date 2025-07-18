@@ -2,6 +2,7 @@ import { useState } from "react";
 import { 
   AppBar, 
   Box, 
+  Button, 
   IconButton, 
   ListItemText, 
   Menu, 
@@ -9,6 +10,7 @@ import {
   Tooltip 
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { SignedIn, SignedOut, SignOutButton, useClerk } from "@clerk/nextjs";
 
 export default function Dropdown() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -50,6 +52,11 @@ export default function Dropdown() {
         >
           <MenuItem onClick={handleClose}>
             <ListItemText primary="Home" />
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <SignOutButton>
+              <ListItemText primary="Sign Out" />
+            </SignOutButton>
           </MenuItem>
         </Menu>
       </Box>
