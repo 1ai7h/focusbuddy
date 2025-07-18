@@ -4,6 +4,7 @@ import {
   Box, 
   Button, 
   IconButton, 
+  Link, 
   ListItemText, 
   Menu, 
   MenuItem, 
@@ -51,7 +52,14 @@ export default function Dropdown() {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <ListItemText primary="Home" />
+            <Link href="/homepage">
+              <ListItemText primary="Home" />
+            </Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link href="/feelingsAI">
+              <ListItemText primary="Zenith Companion" />
+            </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <SignOutButton>

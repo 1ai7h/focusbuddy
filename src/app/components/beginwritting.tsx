@@ -2,7 +2,6 @@ import { Box, Button, Fade, IconButton, TextField, Typography, Card, CardContent
 import { useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import { useUser } from "@clerk/nextjs"
-import AIFeelings from "./aiFeelings";
 import UserPosts from "./userPosts";
 
 export default function BeginWriting() {
@@ -171,7 +170,6 @@ export default function BeginWriting() {
             {posts.length > 0 && (
                 <UserPosts posts={posts} />
             )}
-            <AIFeelings posts={posts} />
         </Box>
     )
 }
