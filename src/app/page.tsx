@@ -3,6 +3,7 @@
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { Box, Button, Fade } from "@mui/material";
 import { useEffect, useState } from "react";
+import AIFeelings from "./components/aiFeelings";
 
 export default function Home() {
   const [show, setShow] = useState(false);

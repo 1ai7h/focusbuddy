@@ -1,8 +1,10 @@
 "use client"
 
 import { useUser } from "@clerk/nextjs"
-import { Box, Fade } from "@mui/material";
+        import { Box, Fade } from "@mui/material";
 import Haiku from "../components/haiku";
+import Dropdown from "../components/dropdown";
+import BeginWriting from "../components/beginwritting";
 
 export default function Homepage() {
     const { isLoaded, isSignedIn, user } = useUser();
@@ -22,16 +24,26 @@ export default function Homepage() {
                 marginLeft: '100px',
                 marginTop: '50px',
             }}>
-                <Fade in={true} timeout={1000}>
-                    <div>
-                        <h1>Welcome {user?.firstName}</h1>
-                    </div>
-                </Fade>
+                {/* Header row with welcome message and hamburger menu */}
+                <Box sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'center',
+                    width: '100%',
+                }}>
+                    <Fade in={true} timeout={1000}>
+                        <div>
+                            <h1>Welcome {user?.firstName}</h1>
+                        </div>
+                    </Fade>
+                    <Dropdown />
+                </Box>
                 <Fade in={true} timeout={2000}>
                     <div>
                         <Haiku />
                     </div>
                 </Fade>
+                <BeginWriting />    
             </Box>
         </div>
     )
